@@ -1,0 +1,44 @@
+/* Global styles*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+body {
+  overflow-x: x;
+  font-family: Poppins, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: #4e4e4e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,407 @@
+/* Styles principal container */
+
+.principal-container {
+  min-height: 800vh;
+  position: relative;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.arrow img {
+  width: 50px;
+  height: auto;
+}
+/* Styles for sections */
+
+.section {
+  padding: 80px 40px 40px 40px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section-dark {
+  background-image: url("/src/assets/description.svg");
+  border-radius: 40px;
+}
+
+.aboutme-title-container {
+  background-color: #333;
+  height: auto;
+  display: inline-block;
+}
+
+.aboutme-title-container h2 {
+  color: #fffefe;
+  font-size: 120px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Styles navbar */
+
+:root {
+  --min-height: 10vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 40px;
+  animation: menuAnimation 1s ease-out;
+  height: var(--min-height);
+}
+
+/* .nav a {
+  width: 150px;
+  text-align: center;
+} */
+
+.nav a:visited {
+  color: rgb(33, 33, 33);
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.started-btn {
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 60px;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.started-btn:visited {
+  color: #ffffff;
+}
+
+.links a {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@keyframes menuAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* Styles main section */
+
+:root {
+  --square-width: 470px;
+  --square-size-relation: 1.16;
+  --font-relation: 2;
+  --font-title-two: 140px;
+}
+
+main {
+  min-height: calc(100vh - var(--min-height));
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-main {
+  width: var(--square-width);
+  height: calc(var(--square-height) / var(--square-size-relation));
+  position: relative;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 31px;
+}
+
+.main-text-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title-one h3 {
+  font-family: Poppins, sans-serif;
+  font-size: calc(var(--font-title-two) / var(--font-relation));
+  color: #333333;
+}
+
+.title-two {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title-two h1 {
+  font-size: var(--font-title-two);
+}
+
+.main-text-circle img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.main-text-circle-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-two h1 {
+  display: inline;
+}
+
+.title-two span {
+  font-size: var(--font-title-two);
+  font-weight: 400;
+}
+
+/* Description section */
+
+.description-section {
+  background-image: url("/src/assets/description.svg");
+  padding-right: 200px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-radius: 40px;
+}
+
+/* .description-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px 40px 40px 40px;
+} */
+
+.description-section > section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 150px 0 150px 0;
+}
+
+.description-section section p {
+  color: #a5a5a4;
+  font-family: "Poppins", sans-serif;
+  font-size: 75px;
+}
+
+/* Section about me */
+
+.aboutme-content img {
+  height: 450px;
+  width: auto;
+  border-radius: 30px;
+}
+
+.aboutme-content {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+  color: #4e4e4e;
+}
+
+.aboutme-aside p {
+  line-height: 132.5%;
+}
+
+.aboutme-aside > p {
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.aboutme-country {
+  display: flex;
+  gap: 200px;
+}
+
+.aboutme-country h3 {
+  display: inline-block;
+  text-wrap-mode: nowrap;
+  font-size: 25px;
+}
+
+.aboutme-country p {
+  font-size: 25px;
+}
+
+/* Section services */
+
+.text-right {
+  text-align: right;
+}
+
+.services-list-container {
+  margin-top: 2.83em;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #4e4e4e;
+}
+
+.services-list {
+  counter-reset: item;
+}
+
+.services-list li {
+  counter-increment: item;
+
+  position: relative;
+  padding-left: 14em; /* Espacio para la viñeta */
+}
+
+.services-list li::before {
+  content: "(" counter(item, decimal-leading-zero) ")";
+  position: absolute;
+  left: 0;
+  color: #888;
+  font-weight: bold;
+}
+
+.services h3 {
+  font-size: 25px;
+  color: #4e4e4e;
+}
+
+/* Section skills */
+
+.skills {
+  font-size: 40px;
+  color: #4e4e4e;
+  padding-top: 40px;
+}
+
+.skills p {
+  font-size: 60px;
+}
+
+.skills ul,
+.skills span {
+  font-weight: 700;
+}
+
+.skills ul {
+  padding-left: 40vw;
+}
+
+.skills-list li:before {
+  content: "- ";
+  font-weight: 200;
+}
+
+/* Section Project */
+
+.project-card {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+}
+
+.project {
+  width: 100%;
+  height: 90vh;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 70vw;
+  height: auto;
+  box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.75);
+}
+
+.project-description {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-title > h3 {
+  font-size: 5rem;
+}
+
+.project-title span {
+  font-size: 1.5rem;
+}
+
+.project-did {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
+}
